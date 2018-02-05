@@ -1,6 +1,6 @@
 
-symlink:
-	ln -f -s ~/.bash.d/bashrc ~/.bashrc
+append_bash:
+	cat bashrc >> ~/.bashrc
 
 blue:
 	echo 'export PS1=$${bluePs1}' > ~/.bash.d/local-conf/10-colored-ps1
@@ -20,5 +20,7 @@ red:
 yellow:
 	echo 'export PS1=$${yellowPs1}' > ~/.bash.d/local-conf/10-colored-ps1
 
-install: symlink green
+reload:
+	source ~/.bashrc
 
+install: append_bash reload

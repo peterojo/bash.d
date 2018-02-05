@@ -1,4 +1,3 @@
-#!/bin/bash
 
 globalConfigurations="${HOME}/.bash.d/global-conf"
 localConfigurations="${HOME}/.bash.d/local-conf"
@@ -16,4 +15,3 @@ loadConfigurations() {
 
 loadConfigurations $globalConfigurations
 loadConfigurations $localConfigurations
-
