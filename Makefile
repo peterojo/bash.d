@@ -1,5 +1,5 @@
 
-append_bash:
+append:
 	cat bashrc >> ~/.bashrc
 
 blue:
@@ -20,7 +20,4 @@ red:
 yellow:
 	echo 'export PS1=$${yellowPs1}' > ~/.bash.d/local-conf/10-colored-ps1
 
-reload:
-	source ~/.bashrc
-
-install: append_bash reload
+install: append green
